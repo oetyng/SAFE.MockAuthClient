@@ -1,6 +1,6 @@
 ## SAFE.AuthClient
 
-![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/SAFE.AuthClient.svg)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/SAFE.AuthClient.svg)](https://www.nuget.org/packages/SAFE.AuthClient)
 
 Auth client for SAFENetwork (Safe Access For Everyone) - a decentralized, secure and anonymous data storage network.
 
@@ -8,7 +8,7 @@ Auth client for SAFENetwork (Safe Access For Everyone) - a decentralized, secure
 
 ## SAFE.BrowserAuthClient
 
-![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/SAFE.BrowserAuthClient.svg)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/SAFE.BrowserAuthClient.svg)](https://www.nuget.org/packages/SAFE.BrowserAuthClient)
 
 Auth client using SAFEBrowser, for SAFENetwork (Safe Access For Everyone) - a decentralized, secure and anonymous data storage network.
 
