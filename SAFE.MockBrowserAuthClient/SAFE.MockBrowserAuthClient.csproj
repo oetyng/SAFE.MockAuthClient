@@ -22,10 +22,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Win32.Registry" Version="4.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\SAFE.MockAuthClient\SAFE.MockAuthClient.csproj" />
+    <PackageReference Include="SAFE.MockAuthClient" Version="0.1.0-alpha.1" />
   </ItemGroup>
 
 </Project>
