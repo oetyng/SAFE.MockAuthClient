@@ -1,16 +1,16 @@
-## SAFE.AuthClient
+## SAFE.MockAuthClient
 
-[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/SAFE.AuthClient.svg)](https://www.nuget.org/packages/SAFE.AuthClient)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/SAFE.MockAuthClient.svg)](https://www.nuget.org/packages/SAFE.MockAuthClient)
 
-Auth client for SAFENetwork (Safe Access For Everyone) - a decentralized, secure and anonymous data storage network.
+Mock Auth client for SAFENetwork (Safe Access For Everyone) - a decentralized, secure and anonymous data storage network.
 
 - Credentials auth
 
-## SAFE.BrowserAuthClient
+## SAFE.MockBrowserAuthClient
 
-[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/SAFE.BrowserAuthClient.svg)](https://www.nuget.org/packages/SAFE.BrowserAuthClient)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/SAFE.MockBrowserAuthClient.svg)](https://www.nuget.org/packages/SAFE.MockBrowserAuthClient)
 
-Auth client using SAFEBrowser, for SAFENetwork (Safe Access For Everyone) - a decentralized, secure and anonymous data storage network.
+Mock Auth client using SAFEBrowser, for SAFENetwork (Safe Access For Everyone) - a decentralized, secure and anonymous data storage network.
 
 - Browser auth
 
