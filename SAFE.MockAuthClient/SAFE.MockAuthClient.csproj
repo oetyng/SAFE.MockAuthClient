@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
     <DefineConstants>TRACE;SAFE_APP_MOCK</DefineConstants>
     <Platforms>x64</Platforms>
-    <RootNamespace>SAFE.AuthClient</RootNamespace>
-    <AssemblyName>SAFE.AuthClient</AssemblyName>
+    <RootNamespace>SAFE.MockAuthClient</RootNamespace>
+    <AssemblyName>SAFE.MockAuthClient</AssemblyName>
     <PackageTags>maidsafe safenetwork oetyng decentralized auth</PackageTags>
-    <Description>Auth client for SAFENetwork (Safe Access For Everyone) - a decentralized, secure and anonymous data storage network.</Description>
+    <Description>Mock Auth client for SAFENetwork (Safe Access For Everyone) - a decentralized, secure and anonymous data storage network.</Description>
     <Authors>oetyng</Authors>
     <Company>oetyng</Company>
     <Copyright>2019 oetyng</Copyright>
@@ -17,7 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaidSafe.SafeApp" Version="0.2.0" />
+    <PackageReference Include="MaidSafe.SafeApp" Version="0.2.1" />
     <PackageReference Include="NetMQ" Version="4.0.0.1" />
     <PackageReference Include="SAFE.Data.Common" Version="0.1.0" />
   </ItemGroup>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28714.193
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAFE.MockAuthClient", "SAFE.MockAuthClient\SAFE.MockAuthClient.csproj", "{6A95D638-8AC5-4BFA-98F3-459F33A6FC83}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAFE.MockBrowserAuthClient", "SAFE.MockBrowserAuthClient\SAFE.MockBrowserAuthClient.csproj", "{1E0E752C-3902-48AA-A3BB-124491A49B4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A95D638-8AC5-4BFA-98F3-459F33A6FC83}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{6A95D638-8AC5-4BFA-98F3-459F33A6FC83}.Debug|x64.ActiveCfg = Debug|x64
+		{6A95D638-8AC5-4BFA-98F3-459F33A6FC83}.Debug|x64.Build.0 = Debug|x64
+		{6A95D638-8AC5-4BFA-98F3-459F33A6FC83}.Release|Any CPU.ActiveCfg = Release|x64
+		{6A95D638-8AC5-4BFA-98F3-459F33A6FC83}.Release|x64.ActiveCfg = Release|x64
+		{6A95D638-8AC5-4BFA-98F3-459F33A6FC83}.Release|x64.Build.0 = Release|x64
+		{1E0E752C-3902-48AA-A3BB-124491A49B4A}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{1E0E752C-3902-48AA-A3BB-124491A49B4A}.Debug|x64.ActiveCfg = Debug|x64
+		{1E0E752C-3902-48AA-A3BB-124491A49B4A}.Debug|x64.Build.0 = Debug|x64
+		{1E0E752C-3902-48AA-A3BB-124491A49B4A}.Release|Any CPU.ActiveCfg = Release|x64
+		{1E0E752C-3902-48AA-A3BB-124491A49B4A}.Release|x64.ActiveCfg = Release|x64
+		{1E0E752C-3902-48AA-A3BB-124491A49B4A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80039D99-8461-4AD2-A1A6-788760EADAF3}
+	EndGlobalSection
+EndGlobal
