@@ -1,12 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using SAFE.Data;
-using SAFE.Data.Client;
-using SAFE.Data.Client.Auth;
 using SafeApp;
 using SafeApp.MockAuthBindings;
 using SafeApp.Utilities;
-using static SAFE.Data.Client.Auth.AuthHelpers;
+using static SAFE.MockAuthClient.AuthHelpers;
 
 namespace SAFE.MockAuthClient
 {

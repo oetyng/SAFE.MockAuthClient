@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using SAFE.Data.Client.Auth;
 
-namespace SAFE.Data.Client
+namespace SAFE.MockAuthClient
 {
     /// <summary>
     /// Used when authenticating via SAFEBrowser.

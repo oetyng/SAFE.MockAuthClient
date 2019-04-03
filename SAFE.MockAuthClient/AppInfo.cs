@@ -1,5 +1,5 @@
 ﻿
-namespace SAFE.Data.Client
+namespace SAFE.MockAuthClient
 {
     public struct AppInfo
     {

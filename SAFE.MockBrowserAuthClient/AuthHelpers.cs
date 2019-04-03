@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.Win32;
+using SafeApp;
 using SafeApp.Utilities;
 
-namespace SAFE.Data.Client.Auth
+namespace SAFE.MockAuthClient
 {
     public class AuthConfig
     {
@@ -49,6 +52,33 @@ namespace SAFE.Data.Client.Auth
                 key.SetValue(string.Empty, appPath + " " + "%1");
             }
             key.Close();
+        }
+
+        // Add safe-auth:// in encoded auth request
+        public static string UrlFormat(AppInfo appInfo, string encodedString, bool toAuthenticator)
+        {
+            var scheme = toAuthenticator ? "safe-auth" : $"{appInfo.Id}";
+            return $"{scheme}://{encodedString}";
+        }
+
+        public static string GetRequestData(string url)
+            => new Uri(url).PathAndQuery.Replace("/", string.Empty);
+
+        // Generating encoded app request using appname, appid, vendor
+        public static async Task<(uint, string)> GenerateEncodedAppRequestAsync(AppInfo appInfo)
+        {
+            Console.WriteLine("\nGenerating application authentication request");
+
+            // Create an AuthReq object
+            var authReq = new AuthReq
+            {
+                AppContainer = true,
+                App = new AppExchangeInfo { Id = appInfo.Id, Scope = string.Empty, Name = appInfo.Name, Vendor = appInfo.Vendor },
+                Containers = new List<ContainerPermissions>()
+            };
+
+            // Return encoded AuthReq
+            return await Session.EncodeAuthReqAsync(authReq);
         }
     }
 }

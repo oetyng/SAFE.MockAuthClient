@@ -1,5 +1,6 @@
-﻿
-namespace SAFE.Data.Client.Auth
+﻿using static SAFE.MockAuthClient.AuthHelpers;
+
+namespace SAFE.MockAuthClient
 {
     public class Credentials
     {
@@ -9,7 +10,7 @@ namespace SAFE.Data.Client.Auth
             Secret = secret;
         }
 
-        public static Credentials Random => new Credentials(AuthHelpers.GetRandomString(10), AuthHelpers.GetRandomString(10));
+        public static Credentials Random => new Credentials(GetRandomString(10), GetRandomString(10));
 
         public string Locator { get; }
         public string Secret { get; }

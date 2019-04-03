@@ -1,7 +1,7 @@
 ﻿using NetMQ;
 using NetMQ.Sockets;
 
-namespace SAFE.Data.Client
+namespace SAFE.MockAuthClient
 {
     // NamedPipes ACL not working in netcore, see https://github.com/dotnet/corefx/issues/31190
     class InterProcessCom

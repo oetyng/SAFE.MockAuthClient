@@ -1,19 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
+    <id>SAFE.MockBrowserAuthClient</id>
+    <Version>0.1.0-alpha.2</Version>
+    <title>SAFENetwork Mock BrowserAuth</title>
+    <Authors>oetyng</Authors>
+    <Owner>oetyng</Owner>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://hub.safedev.org/static/dapps_safe_netdrive.0c11caa9.png</iconUrl>
+    <Description>Mock Auth client using SAFEBrowser, for SAFENetwork (Safe Access For Everyone) - a decentralized and autonomous data storage network.</Description>
+    <summary>Mock BrowserAuth client for SAFENetwork.</summary>
+    <releaseNotes>
+      Added BrowserAuth.cs, InterProcessCom.cs and browser specific methods from SAFE.MockAuthClient.
+      Updated package info and version.
+    </releaseNotes>
+    <language>C#</language>
+    <PackageTags>maidsafe safenetwork oetyng decentralized auth safebrowser</PackageTags>
+    <Copyright>2019 oetyng</Copyright>
+    <RepositoryUrl>https://github.com/oetyng/SAFE.AuthClient</RepositoryUrl>
+    <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
     <DefineConstants>TRACE;SAFE_APP_MOCK</DefineConstants>
     <Platforms>x64</Platforms>
     <RootNamespace>SAFE.MockBrowserAuthClient</RootNamespace>
     <AssemblyName>SAFE.MockBrowserAuthClient</AssemblyName>
-    <PackageTags>maidsafe safenetwork oetyng decentralized auth</PackageTags>
-    <Description>Mock Auth client using SAFEBrowser, for SAFENetwork (Safe Access For Everyone) - a decentralized, secure and anonymous data storage network.</Description>
-    <Authors>oetyng</Authors>
-    <Company>oetyng</Company>
-    <Copyright>2019 oetyng</Copyright>
-    <RepositoryUrl>https://github.com/oetyng/SAFE.AuthClient</RepositoryUrl>
-    <Version>0.1.0-alpha.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -22,7 +33,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Win32.Registry" Version="4.5.0" />
-    <PackageReference Include="SAFE.MockAuthClient" Version="0.1.0-alpha.1" />
+    <PackageReference Include="NetMQ" Version="4.0.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SAFE.MockAuthClient\SAFE.MockAuthClient.csproj" />
   </ItemGroup>
 
 </Project>

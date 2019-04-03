@@ -1,5 +1,4 @@
-﻿using SAFE.Data.Client;
-using SafeApp;
+﻿using SafeApp;
 using System;
 using System.Threading.Tasks;
 

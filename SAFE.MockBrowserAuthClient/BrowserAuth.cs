@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using SAFE.Data.Client.Auth;
-using SAFE.MockAuthClient;
 using SafeApp;
 using SafeApp.Utilities;
 
-namespace SAFE.Data.Client
+namespace SAFE.MockAuthClient
 {
     public class BrowserAuth : AuthBase
     {
@@ -31,8 +29,8 @@ namespace SAFE.Data.Client
                 await ConfigureSession();
 
                 // Generate and send auth request to safe-browser for authentication.
-                var encodedReq = await AuthHelpers.GenerateEncodedAppRequestAsync(_appInfo);
-                var url = AuthHelpers.UrlFormat(_appInfo, encodedReq.Item2, true);
+                var encodedReq = await BrowserAuthHelpers.GenerateEncodedAppRequestAsync(_appInfo);
+                var url = BrowserAuthHelpers.UrlFormat(_appInfo, encodedReq.Item2, true);
                 var info = new System.Diagnostics.ProcessStartInfo
                 {
                     UseShellExecute = true, // not default in netcore, so needs to be set
@@ -52,7 +50,7 @@ namespace SAFE.Data.Client
             try
             {
                 // Decode auth response and initialise a new session
-                var encodedRequest = AuthHelpers.GetRequestData(authResponse);
+                var encodedRequest = BrowserAuthHelpers.GetRequestData(authResponse);
                 var decodeResult = await Session.DecodeIpcMessageAsync(encodedRequest);
                 if (decodeResult.GetType() == typeof(AuthIpcMsg))
                 {
